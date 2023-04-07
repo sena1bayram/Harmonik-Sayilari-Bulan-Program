@@ -1,0 +1,33 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int enBuyuk=0,enKucuk=0,s1;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Kaç tane sayı gireceksiniz? ");
+        int sayi=input.nextInt();
+
+        System.out.print(1+". sayı giriniz");
+        s1=input.nextInt();
+        enKucuk=s1;
+        for(int i=2;i<=sayi;i++)
+        {
+            System.out.print(i+". sayı giriniz");
+            s1=input.nextInt();
+            if(s1>enBuyuk)
+            {
+                enBuyuk=s1;
+            }
+            if (s1<=enKucuk)
+            {
+                enKucuk=s1;
+            }
+
+        }
+        System.out.println("En büyük sayı: "+enBuyuk);
+        System.out.print("En küçük sayı: "+enKucuk);
+
+
+    }
+}
