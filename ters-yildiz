@@ -1,0 +1,27 @@
+import java.util.*;
+import java.io.*;
+
+class Solution{
+    public static void main(String []argh) {
+        int sayi=0;
+     //   Scanner input = new Scanner(System.in);
+       // sayi=input.nextInt();
+
+        for (int i=10;i>=1;i--)
+        {
+            for (int k=10;k>=i;k--)
+            {
+                System.out.print(" ");
+            }
+            for (int j=(i*2-1);j>=1;j--)
+            {
+                System.out.print("*");
+            }
+
+            //System.out.print(i);
+            System.out.println();
+        }
+
+    }
+
+}
