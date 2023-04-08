@@ -1,0 +1,35 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        int taban,us;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Taban Değerini Giriniz: ");
+        taban=input.nextInt();
+
+        System.out.print("üS Değerini Giriniz: ");
+        us=input.nextInt();
+        System.out.println(us(taban,us));
+
+    }
+    static int us(int taban,int us)
+    {
+        int result;
+
+        if(us==0)
+        {
+            return 1;
+        }
+        if (us==1)
+        {
+            return taban;
+        }
+        result=taban*us(taban,(us-1));
+        return result;
+
+    }
+
+}
