@@ -1,0 +1,39 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+       desen();
+
+    }
+    static void desen(int sayi)
+    {
+         int s1;
+        Scanner input = new Scanner(System.in);
+        System.out.print("N Sayısı Giriniz: ");
+        sayi=input.nextInt();
+        s1=sayi;
+        while (true)
+        {
+            System.out.print(sayi+" ");
+            sayi=sayi-5;
+            if (sayi==0 || sayi<0 )
+            {
+
+                break;
+            }
+        }
+        while (true)
+        {
+            System.out.print(sayi+" ");
+            sayi=sayi+5;
+            if (sayi==s1 )
+            {
+                System.out.print(sayi+" ");
+                break;
+            }
+        }
+    }
+}
