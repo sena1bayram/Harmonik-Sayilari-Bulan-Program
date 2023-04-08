@@ -1,0 +1,74 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int bolenler1,bolenler2,kucuk,buyuk;
+        int ebob=1,ekok=1;
+        Scanner input = new Scanner(System.in);
+        System.out.print("1.SayıYI Giriniz: ");
+        int s1=input.nextInt();
+        System.out.print("2.SayıYI Giriniz: ");
+        int s2=input.nextInt();
+
+/*
+        for (int i=1;i<=s1;i++)
+        {
+          if(s1%i==0)
+          {
+              bolenler1=i;
+              System.out.print(bolenler1+" ");
+          }
+
+        }
+        System.out.println();
+        for (int i=1;i<=s2;i++)
+        {
+            if(s2%i==0)
+            {
+                bolenler2=i;
+                System.out.print(bolenler2+" ");
+            }
+        }
+
+ */
+        if(s1<s2)
+        {
+            kucuk=s1;
+        }
+        else
+        {
+            kucuk=s2;
+        }
+        if(s1>s2)
+        {
+            buyuk=s1;
+        }
+        else
+        {
+            buyuk=s2;
+        }
+
+       for (int i=1;i<=kucuk;i++)
+       {
+           if(s1%i==0 && s2%i==0)
+           {
+               ebob=i;
+           }
+       }
+        System.out.println("Ebob: "+ebob);
+       // ekok=(s1*s2)/ebob;
+      //  System.out.println("Ekok: "+ekok);
+
+        for (int i=1;i<=(s1*s2);i++)
+        {
+           if(i%s1==0 && i%s2==0)
+           {
+               System.out.print("Ekok: "+ i);
+               break;
+           }
+        }
+
+
+
+
