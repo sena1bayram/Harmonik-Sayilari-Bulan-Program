@@ -1,0 +1,21 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int ilk=0,ikinci=1,toplam;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Fibonacci kaç elemanlı olsun?  ");
+        int sayi=input.nextInt();
+        System.out.print(ilk+" ");
+        System.out.print(ikinci+" ");
+        for(int i=1;i<=sayi;i++)
+        {
+            toplam=ilk+ikinci;
+            ilk=ikinci;
+            ikinci=toplam;
+            System.out.print(toplam+" ");
+        }
+
+    }
+}
