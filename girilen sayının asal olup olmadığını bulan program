@@ -1,0 +1,34 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("N Sayısı Giriniz: ");
+        int sayi=input.nextInt();
+        int i=2;
+        while (sayi>=i){
+            int kontrol=0;
+            if(sayi%i==0)
+            {
+                kontrol=1;
+                System.out.println(sayi+" sayısı asal sayı değildir");
+                break;
+            }
+            if (kontrol==0)
+            {
+                System.out.println(sayi+ " sayısı asal sayıdır");
+                break;
+            }
+            i++;
+
+        }
+
+    }
+
+
+
+}
